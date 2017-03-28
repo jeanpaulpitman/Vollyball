@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Buttons bar */
+.btn-group-nav button {
+		background-color: #255957;
+		border: 1px solid #363537;
+		color: white;
+		padding: 10px 24px; 
+		cursor: pointer; 
+		float: left; 
+		}
+ /* Prevent double borders */
+.btn-group-nav button:not(:last-child) {
+		border-right: none;
+		}
+
+/* Clear floats (clearfix hack) */
+.btn-group-nav:after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+
+/* Add a background color on hover */
+.btn-group-nav button:hover {
+		background-color: #3e8e41;
+		}

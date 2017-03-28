@@ -113,10 +113,61 @@ main   {
 
 
 /* Major clases*/
+
+/* Flexbox Layout*/
+.silky {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+
+.silky-header,
+.silky-footer {
+	flex: none;
+}
+
+.silky-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding:0 0;
+}
+
+.silky-content {
+  margin-top: 0;
+}
+
+.silky-nav {
+  order: -1;
+}
+
+.silky-nav,
+.silky-ads {
+  padding: 1em;
+  border-radius: 3px;
+  background: rgba(147, 128, 108, 0.1);
+}
+
+@media (min-width: 768px) {
+  .silky-body {
+    flex-direction: row;
+  }
+  .silky-content {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .silky-nav, .silky-ads {
+    flex: 0 0 10em;
+  }
+}
+
+/*generic container*/
 .container {
 	margin: 0 ;
 	}
 	
+/*List Styles*/	
 .list-inline	{
 	padding-left: 0;
 	margin-left: -5px;
@@ -129,6 +180,10 @@ main   {
 	padding-left: 5px;
 	}
 	
+/*Responsive images*/
+.image-responsive {
+	max-width:100%;
+	}	
 	
 /* Top Nav*/
 .topnav {
@@ -177,4 +232,10 @@ main   {
     text-align: left;
   }
   
+}
+
+@media (min-width: 768px) {
+	.topnav a {
+	width:80%;
+	}
 }

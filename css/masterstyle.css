@@ -64,10 +64,6 @@ header    {
 	background: linear-gradient(to right, #eac435 , #fc5524); /* Standard syntax (must be last) */
 	}
 
-nav   {
-	padding: 0;
-	}
-
 main   {
 	overflow: hidden;
 	padding: .5em .75em;
@@ -141,7 +137,6 @@ main   {
   order: -1;
 }
 
-.silky-nav,
 .silky-ads {
   padding: 1em;
   border-radius: 3px;

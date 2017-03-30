@@ -64,17 +64,7 @@ header    {
 	background: linear-gradient(to right, #173F79 , #87690e); /* Standard syntax (must be last) */
 	}
 
-main   {
-	overflow: hidden;
-	padding: .5em .75em;
-	}
-	
 /* Main id elements*/
-#primary  {
-	float: left;
-	width: 100%;
-	margin-bottom: 1em;
-	}
 
 #copyright   {
 	background-color:#173f79;
@@ -94,7 +84,7 @@ main   {
 	font-size: 0.7em;
 	padding: .5em .5em;
 	}	
-						
+	
 #footerlinks a  {
 	padding:  .5em .5em;
 	color: white;

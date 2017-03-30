@@ -2,7 +2,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	color: black;
+	color: white;
 	background-color: #1B20C1;
 	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, Spicy Rice,sans-serif;
 	}
@@ -44,11 +44,11 @@ img{
 	background-color:#484538;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	border:2px solid #56a3a6;
+	border:2px solid #f4da02;
 	padding:5px;
 	}
 						
-a:link { color: royalblue; }
+a:link { color: yellow; }
 a:visited { color: purple; }
 a:focus { color: black; }
 a:hover { color: green; }
@@ -170,6 +170,13 @@ main   {
 	overflow; hidden;
 	}
 	
+/* Details Container*/
+.container-details {
+	width: 90%;
+	margin: 2em auto;
+	overflow; hidden;
+	}
+	
 /*List Styles*/	
 .list-inline	{
 	padding-left: 0;
@@ -253,16 +260,17 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
     display: inline;
+	color:black
 	}
 
 ul.breadcrumb li+li:before {
     padding: .5em;
-    color: black;
+    color: #87690e;
     content: "/\00a0";
 	}
 
 ul.breadcrumb li a {
-    color: #0275d8;
+    color: #87690e;
     text-decoration: none;
 	}
 

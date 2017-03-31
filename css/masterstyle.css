@@ -122,7 +122,23 @@ header    {
 .pricing-table tr:nth-child(odd) {
 	background-color:#907117;
 	}
+
+/*Ladder Table*/
+.ladder-table th, td	{
+	padding: .5em 1em;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px solid #8b834d;
+	}
+
+.ladder-table th {
+	background-color:#173f79;
+	}
 	
+.ladder-table tr:nth-child(odd) {
+	background-color:#907117;
+	}
+		
 /* Flexbox Layout*/
 .silky {
 	display: flex;
@@ -189,6 +205,14 @@ header    {
 	width: 90%;
 	margin: 2em auto;
 	overflow; hidden;
+	}
+
+/* Ladder Container*/
+.container-ladder {
+	width: 90%;
+	margin: 2em auto;
+	border-collapse: collapse;
+	overflow-x: auto;
 	}
 	
 /*List Styles*/	

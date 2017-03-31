@@ -240,6 +240,38 @@ header    {
 	}
 }
 
+/* Sub Nav*/
+.subnav {
+  overflow: hidden;
+  background-color: #173f79;
+}
+
+.subnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: .75em 1em;
+  text-decoration: none;
+  font-size: 1.1em;
+  cursor: pointer; 
+}
+
+.subnav a:hover {
+  background-color: #907117;
+  color: white;
+}
+
+.subnav .icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+	.subnav a {
+	width:80%;
+	}
+}
+
 /* Breadcrumb*/
 ul.breadcrumb {
     padding: .5em 1em;

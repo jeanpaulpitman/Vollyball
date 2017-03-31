@@ -18,7 +18,7 @@ h2 { font-size: 1.75em; } /* 28px */
 h3 { font-size: 1.375em; } /* 22px */
 h4 { font-size: 1.125em; } /* 18px */
 h5 { font-size: 1em; } /* 16px */
-h6 { font-size: .875em; } /* 14px */
+h6 { display:none; } /* H6 is hidden */
 
 p	{
 	margin: 0 0 1.5em;
@@ -99,6 +99,11 @@ header    {
 
 
 /* Major clases*/
+
+/* 2.5em font */
+.huge {
+	font-size:2.5em;
+}
 
 /* Flexbox Layout*/
 .silky {

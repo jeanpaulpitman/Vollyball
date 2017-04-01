@@ -28,7 +28,7 @@ p	{
 hr {
 	height: 0;
 	margin-top: 1em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	border: 0;
 	border-top: 1px solid #ddd;
 	}
@@ -414,6 +414,38 @@ only screen and (max-device-width : 530px){
 only screen and (max-device-width : 320px){
 	.galleryItem {width: 96%;}
 	.galleryItem img {width: 96%;}
-	.galleryItem h3 {font-size: 18px;}
-	.galleryItem p, {font-size: 18px;}
+	.galleryItem h3 {font-size: 1.125em;}
+	.galleryItem p {font-size: 1.125em;}
 }
+
+/* FAQ item layout*/
+.faq-item {
+	float: left;
+	width: 46%;
+	margin:  2% 2% 50px 2%;	
+	}
+
+.faq-item h3 {
+	text-transform: uppercase;
+	}
+	
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width : 698px),
+only screen and (max-device-width : 698px){
+	.faq-item {width: 96%;}
+	.faq-item img {width: 96%;}
+	.faq-item h3 {font-size: 1.125em;}
+	.faq-item p {font-size: 1.125em;}
+}
+
+/* FAQ Links layout*/
+.links-item {
+	float: left;
+	width: 96%;
+	margin:  2% 2% 50px 2%;	
+	}
+
+.links-item h3 {
+	text-transform: uppercase;
+	}

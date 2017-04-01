@@ -67,7 +67,7 @@ header    {
 /* Main id elements*/
 
 #map {
-	width:400px;
+	width:400px; /* Google Map, needs to be exactly 400px x 400px to function*/ 
 	height:400px;
 	background:yellow;
 	}
@@ -421,12 +421,20 @@ only screen and (max-device-width : 320px){
 /* FAQ item layout*/
 .faq-item {
 	float: left;
-	width: 46%;
-	margin:  2% 2% 50px 2%;	
+	width: 44%;
+	margin:  2% 2% 2% 2%;	
 	}
 
 .faq-item h3 {
 	text-transform: uppercase;
+	}
+
+.faq-item hr {
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	border-top: 1px solid #ddd;
 	}
 	
 /* MEDIA QUERIES*/
@@ -439,13 +447,52 @@ only screen and (max-device-width : 698px){
 	.faq-item p {font-size: 1.125em;}
 }
 
+/* FAQ Cool Fact layout*/
+.faq-item-cool {
+	float: left;
+	width: 43%;
+	margin:  2% 2% 2% 2%;	
+	background-color:#173f79;
+	padding:.5em .5em;
+	}
+
+.faq-item-cool h3 {
+	text-transform: uppercase;
+	}
+
+.faq-item-cool hr {
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	border-top: 1px solid #ddd;
+	}
+	
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width : 698px),
+only screen and (max-device-width : 698px){
+	.faq-item-cool {width: 96%;}
+	.faq-item-cool img {width: 96%;}
+	.faq-item-cool h3 {font-size: 1.125em;}
+	.faq-item-cool p {font-size: 1.125em;}
+}
+
 /* FAQ Links layout*/
 .links-item {
 	float: left;
 	width: 96%;
-	margin:  2% 2% 50px 2%;	
+	margin:  2% 2% 2% 2%;	
 	}
 
 .links-item h3 {
 	text-transform: uppercase;
+	}
+
+.links-item hr {
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	border-top: 1px solid #ddd;
 	}

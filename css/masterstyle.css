@@ -66,6 +66,12 @@ header    {
 
 /* Main id elements*/
 
+#map {
+	width:400px;
+	height:400px;
+	background:yellow;
+	}
+	
 #copyright   {
 	background-color:#173f79;
 	clear:both;
@@ -226,6 +232,11 @@ header    {
 	display: inline;
 	padding-right: 5px;
 	padding-left: 5px;
+	}
+	
+.list-unstyled{
+	padding-left: 0;
+	list-style: none;
 	}
 	
 /*Responsive images*/

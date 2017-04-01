@@ -239,6 +239,10 @@ header    {
 	list-style: none;
 	}
 	
+.list-general li {
+	padding:.5em .5em;
+	}
+	
 /*Responsive images*/
 .img-responsive {
 	max-width:100%;

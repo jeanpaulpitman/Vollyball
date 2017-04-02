@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Slammers Beach Volleyball, Sitemap</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/masterstyle.css">
+	</head>
+	<body class="silky">
+		<header class="silky-header">
+			<div class="container">
+				<h1>Slammers Beach Volleyball</h1>
+			</div>
+		</header>	
+		<div class="silky-body">
+			<main class="silky-content">
+				<section class="container">
+					<h6>Breadcrumb</h6>
+					<ul class="breadcrumb">
+						<li><a href="../index.html">Home</a></li>
+						<li>Sitemap</li>
+					</ul>
+				</section>
+				<section class="container-details">
+					<h6>Main Content</h6>
+					<article>
+						<h1>Sitemap</h1>
+						<hr>
+						<p>This sitemap provides a link to each page for your convience.</p>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<ul>
+								<li><a href="aboutus.html">About Us</a></li>
+								<ul>
+									<li><a href="pricing.html">Pricing</a></li>
+									<li><a href="play.html">Play Guidelines</a></li>
+									<li><a href="contactus.html">Contact Us</a></li>
+								</ul>
+								<li><a href="faq.html">FAQ</a></li>
+								<ul>
+									<li><a href="gamerules.html">Game Rules</a></li>
+								</ul>
+								<li><a href="ladder.html">Ladder</a></li>
+								<li><a href="news.html">News</a></li>
+								<li><a href="signup.html">Register Team</a></li>
+							</ul>
+						</ul>
+						<hr>
+					</article>
+				</section>	
+			</main>
+			<nav class="silky-nav">
+				<h6>Navigation</h6>
+				<div class="topnav" id="myTopnav">
+					<a href="../index.html">Home</a>
+					<a href="aboutus.html">About Us</a>
+					<a href="faq.html">FAQ</a>
+					<a href="ladder.html">Ladder</a>
+					<a href="news.html">News</a>
+					<a href="javascript:void(0);" class="icon" onclick="topNav()">&#9776;</a>
+				</div>
+				<div class="subnav">
+					<a href="sign.html">Register Team</a>
+				</div>
+			</nav>
+			<aside class="silky-ads">
+			<article>
+				<h6>Advertising</h6>
+				<picture>
+					<source 
+						media="(min-width: 1900px)"
+						srcset="../images/ads_320x1200.png">
+					<source 
+						media="(min-width: 768px)"
+						srcset="../images/ads_160x600.png">
+					<source 
+						media="(min-width: 500px)"
+						srcset="../images/ads_550x700.png">
+					<img class="img-responsive"
+						src="../images/ads_350x450.png" 
+						alt="advertising">
+				</picture>
+			</article>
+			</aside>
+		</div>
+
+		<footer class="silky-footer">
+			<section id="footerlinks">
+				<h6>Footer</h6>
+				<ul class="list-inline">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#top">Top of page</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+					<li><a href="contactus.html">Contact</a></li>
+				</ul>
+			</section>	
+			<section id="copyright">
+			<h6>Copyright</h6>
+				<small>Copyright &copy; JP Pitman (2017), All rights reserved.</small>
+			</section>
+		</footer>
+		
+		<script>
+			function topNav() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+     		}	else {
+					x.className = "topnav";
+			}
+			}
+		</script>
+		
+	</body>
+</html>

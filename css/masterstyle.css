@@ -1,3 +1,16 @@
+/*Fonts*/
+@font-face {
+    font-family: 'capture_itregular';
+    src: url('Capture_it-webfont.eot');
+    src: url('Capture_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Capture_it-webfont.woff') format('woff'),
+         url('Capture_it-webfont.ttf') format('truetype'),
+         url('Capture_it-webfont.svg#capture_itregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*Base Styles*/
 body{
 	margin: 0;
@@ -59,6 +72,7 @@ header    {
 
 /* Main id elements*/
 
+
 #logo {
 	position:absolute;
 	right: 1em;
@@ -108,8 +122,12 @@ header    {
 /* 2.5em font */
 .huge {
 	font-size:2.5em;
-}
-
+	}
+	
+.silky-header h1 {
+	font-family:'capture_itregular'; 
+	}
+	
 /*Table Styles*/
 
 /*Pricing Table*/
@@ -555,7 +573,7 @@ only screen and (max-device-width : 698px){
     background-color: lightblue;
 	}
 
-	/* Double-sized Checkboxes */
+/* Double-sized Checkboxes */
 .block-forms input[type=checkbox] {
 	-ms-transform: scale(2); /* IE */
 	-moz-transform: scale(2); /* FF */

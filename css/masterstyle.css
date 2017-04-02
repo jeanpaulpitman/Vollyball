@@ -71,7 +71,26 @@ header    {
 	}
 
 /* Main id elements*/
+#aboutus {
+	background-image:url("../images/sand_head.jpg");
+	background-color: #cccccc;
+	padding: .5em .5em;
+	color:yellow;
+	font-family:'capture_itregular'; 
+	font-size:2.25em;
+	text-shadow: 3px 2px black;
+	margin-bottom:.5em;
+	}
 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	#aboutus {font-size: 1.85em;}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	#aboutus {font-size: 1.125em;}
+}
 
 #logo {
 	position:absolute;
@@ -124,8 +143,10 @@ header    {
 	font-size:2.5em;
 	}
 	
+/*Header Font */	
 .silky-header h1 {
 	font-family:'capture_itregular'; 
+	font-size:2.5em;
 	}
 	
 /*Table Styles*/
@@ -278,6 +299,7 @@ header    {
   text-align: center;
   padding: .75em 1em;
   text-decoration: none;
+  font-family:'capture_itregular';
   font-size: 1.1em;
   cursor: pointer; 
 }
@@ -337,6 +359,7 @@ header    {
   text-align: center;
   padding: .75em 1em;
   text-decoration: none;
+  font-family:'capture_itregular';
   font-size: 1.1em;
   cursor: pointer; 
 }

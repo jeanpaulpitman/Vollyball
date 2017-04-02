@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Slammers Beach Volleyball, Register Team</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/masterstyle.css">
+	</head>
+	<body class="silky">
+		<header class="silky-header">
+			<div class="container">
+				<h1>Slammers Beach Volleyball</h1>
+			</div>
+		</header>	
+		<div class="silky-body">
+			<main class="silky-content">
+				<section class="container">
+					<h6>Breadcrumb</h6>
+					<ul class="breadcrumb">
+						<li><a href="../index.html">Home</a></li>
+						<li>Register Team</li>
+					</ul>
+				</section>
+				<section class="container-details">
+					<h6>Main Content</h6>
+					<section>
+						<h1>Register Team</h1>
+						<hr>
+						<h2>Announcements</h2>
+						<ul>
+							<li>New season starts August 21st.</li>
+						</ul>
+						<hr>
+					</section>
+					<section class="block-forms">
+						<form action="https://formspree.io/jeanpaul.pitman@my.jcu.edu.au" method="post">
+							<div id="name">
+								<label for="register-name">Contact person name:</label>
+								<input type="text" id="register-name" name="name" required aria-required="true">
+							</div>
+							<div id="tel">
+								<label for="telp">Contact phone number:</label>
+								<input type="tel" id="telp" name="telephone" required aria-required="true">
+							</div>
+							<div id="email">
+								<label for="email">Contact email address:</label>
+								<input type="email" id="email" name="email" required aria-required="true">
+							</div>
+							<div id="days">
+								<label for="chk_group">Competition days:</label><br />
+								<table>
+									<tr>
+										<th>Mon</th>
+										<th>Tue</th>
+										<th>Wed</th>
+										<th>Thu</th>
+										<th>Fri</th>
+										<th>Sat</th>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="chk_group[]" value="Monday" /></td>
+										<td><input type="checkbox" name="chk_group[]" value="Tuesday" /></td>
+										<td><input type="checkbox" name="chk_group[]" value="Wednesday" /></td>
+										<td><input type="checkbox" name="chk_group[]" value="Thursday" /></td>
+										<td><input type="checkbox" name="chk_group[]" value="Friday" /></td>
+										<td><input type="checkbox" name="chk_group[]" value="Saturday" /></td>
+									</tr>
+								</table>
+							</div>
+							<div id="comptime">	
+								<label for="time">Competition time:</label>
+								<select name="Time">
+									<option value="Afternoon">Afternoon</option>
+									<option value="Evening">Evening</option>
+								</select>
+							</div>
+							<div id="guidelines">
+								<label for="playguidelines">Please check to confirm you have read and agree to our <a href="play.html" target="_blank">Playing Guidelines</a>:</label>
+								<input type="checkbox" id="playguidelines" name="playguidelines" value="Accepted">
+							</div>
+							<div class="button">
+								<input type="submit" class="formsbig-submit" id="register-submit" value="Register Team Now">
+							<hr>
+							<p><small>Slammers Beach Volleyball takes your data privacy seriously, you can find our <a href="privacy.html" target="_blank">Privacy policy here.</a></small></p>
+							</div>
+						</form>
+					</section>
+				</section>	
+			</main>
+			<nav class="silky-nav">
+				<h6>Navigation</h6>
+				<div class="topnav" id="myTopnav">
+					<a href="../index.html">Home</a>
+					<a href="aboutus.html">About Us</a>
+					<a href="faq.html">FAQ</a>
+					<a href="ladder.html">Ladder</a>
+					<a href="news.html">News</a>
+					<a href="javascript:void(0);" class="icon" onclick="topNav()">&#9776;</a>
+				</div>
+				<div class="subnav">
+					<a href="pricing.html">Pricing</a>
+					<a href="contactus.html">Contact Us</a>
+				</div>
+			</nav>
+			<aside class="silky-ads">
+			<article>
+				<h6>Advertising</h6>
+				<picture>
+					<source 
+						media="(min-width: 1900px)"
+						srcset="../images/ads_320x1200.png">
+					<source 
+						media="(min-width: 768px)"
+						srcset="../images/ads_160x600.png">
+					<source 
+						media="(min-width: 500px)"
+						srcset="../images/ads_550x700.png">
+					<img class="img-responsive"
+						src="../images/ads_350x450.png" 
+						alt="advertising">
+				</picture>
+			</article>
+			</aside>
+		</div>
+
+		<footer class="silky-footer">
+			<section id="footerlinks">
+				<h6>Footer</h6>
+				<ul class="list-inline">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#top">Top of page</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+					<li><a href="contactus.html">Contact</a></li>
+				</ul>
+			</section>	
+			<section id="copyright">
+			<h6>Copyright</h6>
+				<small>Copyright &copy; JP Pitman (2017), All rights reserved.</small>
+			</section>
+		</footer>
+		
+		<script>
+			function topNav() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+     		}	else {
+					x.className = "topnav";
+			}
+			}
+		</script>
+		
+	</body>
+</html>

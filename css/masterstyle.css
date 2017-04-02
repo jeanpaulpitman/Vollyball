@@ -84,7 +84,7 @@ header    {
 
 @media only screen and (max-width : 530px),
 only screen and (max-device-width : 530px){
-	#aboutus {font-size: 1.85em;}
+	#aboutus {font-size: 2em;}
 }
 
 @media only screen and (max-width : 320px),

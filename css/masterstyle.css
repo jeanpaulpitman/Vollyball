@@ -148,6 +148,27 @@ only screen and (max-device-width : 320px){
 
 /* Major clases*/
 
+/* Sign Up Button*/
+.button-signup {
+    background-color: #5DBC31;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.125em;
+    margin: 4px 2px;
+    cursor: pointer;
+	width:80%;
+	font-style:italic;
+	}
+
+.button-signup a:hover {
+  background-color: #FE9920;
+  color: white;
+}	
+	
 /* 2.5em font */
 .huge {
 	font-size:2.5em;
@@ -245,6 +266,14 @@ only screen and (max-device-width : 320px){
 /*generic container*/
 .container {
 	margin: 0 ;
+	}
+
+/* index CTA Container*/
+.container-cta {
+	width: 90%;
+	margin: 2em auto;
+	overflow; hidden;
+	text-align:center;
 	}
 
 /* Gallery Container*/

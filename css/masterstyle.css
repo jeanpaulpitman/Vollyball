@@ -45,6 +45,8 @@ h4 { font-size: 1.125em; } /* 18px */
 h5 { font-size: 1em; } /* 16px */
 h6 { display:none; } /* h6 is hidden */
 
+h1 { padding-top:.5em; }
+
 p	{
 	margin: 0 0 1.5em;
 	line-height: 1.5;

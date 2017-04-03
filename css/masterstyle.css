@@ -255,7 +255,7 @@ only screen and (max-device-width : 320px){
 	margin: 2em auto;
 	overflow; hidden;
 	}
-	
+
 /* Details Container*/
 .container-details {
 	width: 90%;
@@ -428,7 +428,7 @@ ul.breadcrumb li a:hover {
 	
 /* Home Gallery layout*/
 .galleryItem {
-	color: #797478;
+	color: white;
 	font: 10px/1.5 Verdana, Helvetica, sans-serif;
 	float: left;
 	width: 16%;
@@ -454,7 +454,7 @@ only screen and (max-device-width : 940px){
 
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
-	.galleryItem {width: 29.33333%;}
+	.galleryItem {width: 25%;}
 }
 
 @media only screen and (max-width : 530px),

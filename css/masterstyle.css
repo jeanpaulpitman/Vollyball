@@ -64,7 +64,11 @@ body{
 	margin: 0;
 	padding: 0;
 	color: white;
-	background-color: #8b834d;
+	background: #8b834d; /* For browsers that do not support gradients */    
+	background: -webkit-linear-gradient(left, #8b834d, #87690e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #8b834d, #87690e); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #8b834d, #87690e); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #8b834d , #87690e); /* Standard syntax (must be last) */
 	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva,sans-serif;
 	}
 						
@@ -81,15 +85,15 @@ h4 { font-size: 1.125em; } /* 18px */
 h5 { font-size: 1em; } /* 16px */
 h6 { display:none; } /* h6 is hidden */
 
-body h1,h2 { 
+body h1,h2,h3 { 
 	padding-top:.5em; 
 	font-family:'kaushan_scriptregular';	
 	}
 	
-body h3 { 
+/*body h3 { 
 	padding-top:.5em; 
 	font-family: 'quicksandbold';	
-	}
+	}*/
 
 p	{
 	margin: 0 0 1.5em;
@@ -121,7 +125,7 @@ a:active { color: red; }
 header    {
 	color: #fff;
 	padding: .5em .75em;
-	background: 56a3a6; /* For browsers that do not support gradients */    
+	background: #56a3a6; /* For browsers that do not support gradients */    
 	background: -webkit-linear-gradient(left, #173F79, #87690e); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(right, #173F79, #87690e); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(right, #173F79, #87690e); /* For Firefox 3.6 to 15 */
@@ -334,6 +338,15 @@ only screen and (max-device-width : 320px){
 	text-align:center;
 	}
 
+/* index News Container*/
+.container-news {
+	width: 90%;
+	background-color: #173F79; 
+	padding:1em;
+	margin: 1em auto;
+	overflow; hidden;
+	}
+	
 /* Gallery Container*/
 .container-gallery {
 	width: 80%;
@@ -375,7 +388,8 @@ only screen and (max-device-width : 320px){
 	}
 	
 .list-general li {
-	padding:.5em .5em;
+	padding-top:.5em;
+	padding-left:.5em;
 	}
 	
 /*Responsive images*/

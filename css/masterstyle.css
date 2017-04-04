@@ -23,6 +23,15 @@
 
 }
 
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*Base Styles*/
 body{
 	margin: 0;
@@ -45,7 +54,9 @@ h4 { font-size: 1.125em; } /* 18px */
 h5 { font-size: 1em; } /* 16px */
 h6 { display:none; } /* h6 is hidden */
 
-h1 { padding-top:.5em; }
+body h1,h2,h3 { 
+	padding-top:.5em; 
+	font-family:'kaushan_scriptregular'	}
 
 p	{
 	margin: 0 0 1.5em;

@@ -108,6 +108,10 @@ only screen and (max-device-width : 320px){
 
 }
 
+#play-guidelines {
+	padding-top:1em;
+}
+
 #map {
 	width:400px; /* Google Map, needs to be exactly 400px x 400px to function*/ 
 	height:400px;

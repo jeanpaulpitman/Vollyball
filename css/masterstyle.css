@@ -133,28 +133,6 @@ header    {
 	}
 
 /* Main id elements*/
-#aboutus {
-	background-image:url("../images/sand_head.jpg");
-	background-color: #cccccc;
-	padding: .5em .5em;
-	color:yellow;
-	font-family:'capture_itregular'; 
-	font-size:2.25em;
-	text-shadow: 3px 2px black;
-	margin-bottom:.5em;
-	}
-
-@media only screen and (max-width : 530px),
-only screen and (max-device-width : 530px){
-	#aboutus {font-size: 2em;}
-}
-
-@media only screen and (max-width : 320px),
-only screen and (max-device-width : 320px){
-	#aboutus {font-size: 1.125em;}
-}
-
-}
 
 #play-guidelines {
 	padding-top:1em;
@@ -225,6 +203,10 @@ only screen and (max-device-width : 320px){
 	
 .yellow {
 	color:yellow;
+	}
+
+.red {
+	color:red;
 	}	
  
 /*Header Font */	
@@ -324,7 +306,7 @@ only screen and (max-device-width : 320px){
 /* Announcements spotlight Container*/
 .container-announcements {
 	background-color:#173f79;
-	width: 90%;
+	width: 96%;
 	max-width:50em;
 	padding: .5em 1em;
 	margin-top:1em;
@@ -706,7 +688,7 @@ only screen and (max-device-width : 698px){
 	font:italic 1.125em Helvetica;
 	}
 	
-.block-forms input, select {
+.block-forms input, select , textarea {
     width: 100%;
     padding: .75em 1.125em;
     margin: .5em 0;

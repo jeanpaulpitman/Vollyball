@@ -47,21 +47,6 @@
 				</section>
 				<section class="container-details">
 					<h6>Main Content</h6>
-					<section class="container">
-						<picture>
-							<source 
-								media="(min-width: 1200px)"
-								srcset="../images/yellownet_1200x320.jpg">
-		
-							<source
-								media="(min-width: 768px)"
-								srcset="../images/yellownet_600x160.jpg">
-							<img class="img-responsive"
-								src="../images/yellownet_340x140.jpg" 
-								alt="people playing Beach Volleyball">
-							<figcaption><small>By Flavio~ Beach Vollyball:Soft Touch [<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.4</a>], <a href="https://www.flickr.com/photos/37873897@N06/5208457834">via Flicker</a></small></figcaption>
-						</picture>
-					</section>
 					<section class="container-announcements">
 						<hr>
 						<h2>Announcements</h2>
@@ -74,19 +59,19 @@
 						<h1>Register Team</h1>
 						<form action="https://formspree.io/jeanpaul.pitman@my.jcu.edu.au" method="post">
 							<div id="name">
-								<label for="register-name">Contact person name:</label>
+								<label for="register-name">Contact person name:<span class="red">*</span></label>
 								<input type="text" id="register-name" name="name" required aria-required="true">
 							</div>
 							<div id="tel">
-								<label for="telp">Contact phone number:</label>
+								<label for="telp">Contact phone number:<span class="red">*</span></label>
 								<input type="tel" id="telp" name="telephone" required aria-required="true">
 							</div>
 							<div id="email">
-								<label for="email">Contact email address:</label>
+								<label for="email">Contact email address:<span class="red">*</span></label>
 								<input type="email" id="email" name="email" required aria-required="true">
 							</div>
 							<div id="days">
-								<label for="chk_group">Competition days:</label><br />
+								<label for="chk_group">Competition days:<span class="red">*</span></label><br />
 								<table>
 									<tr>
 										<th>Mon</th>
@@ -107,20 +92,21 @@
 								</table>
 							</div>
 							<div id="comptime">	
-								<label for="time">Competition time:</label>
+								<label for="time">Competition time:<span class="red">*</span></label>
 								<select name="Time">
 									<option value="Afternoon">Afternoon</option>
 									<option value="Evening">Evening</option>
 								</select>
 							</div>
 							<div id="guidelines">
-								<label for="playguidelines">Please check to confirm you have read and agree to our <a href="pricing.html#play-guidelines" target="_blank">Playing Guidelines</a>:</label>
-								<input type="checkbox" id="playguidelines" name="playguidelines" value="Accepted">
+								<label for="playguidelines">Please check to confirm you have read and agree to our <a href="pricing.html#play-guidelines" target="_blank">Playing Guidelines</a>:<span class="red">*</span></label>
+								<input type="checkbox" id="playguidelines" name="playguidelines" value="Accepted" required aria-required="true">
 							</div>
 							<div class="button">
 								<input type="submit" class="formsbig-submit" id="register-submit" value="Register Team Now">
 							<hr>
 							<p><small>Slammers Beach Volleyball takes your data privacy seriously, you can find our <a href="privacy.html" target="_blank">Privacy policy here.</a></small></p>
+							<hr>
 							</div>
 						</form>
 					</section>

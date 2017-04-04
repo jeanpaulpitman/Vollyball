@@ -32,6 +32,33 @@
 
 }
 
+@font-face {
+    font-family: 'ostrich_sansmedium';
+    src: url('ostrich-regular-webfont.woff2') format('woff2'),
+         url('ostrich-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('quicksand-regular-webfont.woff2') format('woff2'),
+         url('quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('quicksand-bold-webfont.woff2') format('woff2'),
+         url('quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*Base Styles*/
 body{
 	margin: 0;
@@ -54,9 +81,15 @@ h4 { font-size: 1.125em; } /* 18px */
 h5 { font-size: 1em; } /* 16px */
 h6 { display:none; } /* h6 is hidden */
 
-body h1,h2,h3 { 
+body h1,h2 { 
 	padding-top:.5em; 
-	font-family:'kaushan_scriptregular'	}
+	font-family:'kaushan_scriptregular';	
+	}
+	
+body h3 { 
+	padding-top:.5em; 
+	font-family: 'quicksandbold';	
+	}
 
 p	{
 	margin: 0 0 1.5em;
@@ -176,13 +209,10 @@ only screen and (max-device-width : 320px){
     margin: 4px 2px;
     cursor: pointer;
 	width:80%;
+	max-width:30em;
 	font-style:italic;
 	}
 
-.button-signup a:hover {
-  background-color: #FE9920;
-  color: white;
-}	
 	
 /* 2.5em font */
 .huge {
@@ -262,7 +292,7 @@ only screen and (max-device-width : 320px){
 	background: rgba(147, 128, 108, 0.1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .silky-body {
     flex-direction: row;
   }
@@ -282,10 +312,23 @@ only screen and (max-device-width : 320px){
 .container {
 	margin: 0 ;
 	}
-
+	
+/* Announcements spotlight Container*/
+.container-announcements {
+	background-color:#173f79;
+	width: 90%;
+	max-width:50em;
+	padding: .5em 1em;
+	margin-top:1em;
+	overflow; hidden;
+	
+	}
+	
 /* index CTA Container*/
 .container-cta {
 	width: 90%;
+	background-color:#4A7023;
+	padding:1em;
 	margin: 2em auto;
 	overflow; hidden;
 	text-align:center;
@@ -390,7 +433,7 @@ only screen and (max-device-width : 320px){
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.topnav a {
 	width:80%;
 	}
@@ -433,7 +476,7 @@ only screen and (max-device-width : 320px){
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.subnav a {
 	width:80%;
 	}
@@ -473,8 +516,8 @@ ul.breadcrumb li a:hover {
 	color: white;
 	font: 10px/1.5 Verdana, Helvetica, sans-serif;
 	float: left;
-	width: 16%;
-	margin:  2% 2% 50px 2%;	
+	width: 21%;
+	margin:  2% 2% 2% 2%;	
 	}
 
 .galleryItem h3 {
@@ -491,7 +534,7 @@ ul.breadcrumb li a:hover {
 /* MEDIA QUERIES*/
 @media only screen and (max-width : 940px),
 only screen and (max-device-width : 940px){
-	.galleryItem {width: 21%;}
+	.galleryItem {width: 25%;}
 }
 
 @media only screen and (max-width : 720px),
@@ -598,6 +641,7 @@ only screen and (max-device-width : 698px){
 	margin:.5em;
 	padding:0;
 	width:96%;
+	max-width:50em;
 	overflow:visible
 	}
 
@@ -611,27 +655,32 @@ only screen and (max-device-width : 698px){
 	
 .block-forms input, select {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: .75em 1.125em;
+    margin: .5em 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #8b834d;
+    border-radius: .25em;
     box-sizing: border-box;
 	}
+	
+.block-forms label {
+	font-family:'kaushan_scriptregular';
+	font-size:1.3em;
+}
 
 .block-forms input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: .75em 1.125em;
+    margin: .5em 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 	}
 
 .block-forms input[type=submit]:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 .75em 1em 0 rgba(0,0,0,0.24), 0 1.1em 3.2em 0 rgba(0,0,0,0.19);
 	}
 
 .block-forms input[id=days] {
@@ -647,7 +696,7 @@ only screen and (max-device-width : 698px){
 	}
 
 .block-forms input:focus {
-    background-color: lightblue;
+    background-color: lightgreen;
 	}
 
 /* Double-sized Checkboxes */
@@ -656,5 +705,5 @@ only screen and (max-device-width : 698px){
 	-moz-transform: scale(2); /* FF */
 	-webkit-transform: scale(2); /* Safari and Chrome */
 	-o-transform: scale(2); /* Opera */
-	padding: 10px;
+	padding: .5em;
 	}

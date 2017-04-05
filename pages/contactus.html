@@ -70,6 +70,7 @@
 									<option value="feedback-Complaint">Feedback or Complaint</option>
 									<option value="venue-hire">Venue Hire or Function</option>
 									<option value="media">Media</option>
+									<option value="sponsor">Sponsorship</option>
 									<option value="employment">Employment</option>
 									<option value="other">Other</option>
 								</select>
@@ -84,7 +85,7 @@
 							</div>
 							<div id="inquiry">
 								<label for="inquiry">Details of your inquiry...<span class="red">*</span></label>
-								<textarea name="inquiry" rows="8">Details of your inquiry...</textarea>
+								<textarea name="inquiry" rows="8"></textarea>
 							</div>
 							<div id="join-newsletter">
 								<label for="join-newsletter">Please check to join our mailing list to receive special offers and invitations to VIP events:</a></label>
@@ -104,13 +105,14 @@
 							<li>Phone: <a href="tel:+61747712233">47712233</a></li>
 							<li>Fax: 4771 2244</li>
 							<li>Email: <a href="mailto:slammers@gmail.com">slammers@gmail.com</a></li>
-							<li>Address: 123 Pokemund Street, Cairsville</li>
+							<li>Address: 123 Pokemund Street, Cairnsville, QLD.</li>
 						</ul>
 						<hr>						
 					</section>
 					<section>
 						<h3>Map</h3>
 						<div id="map"></div>
+						<hr>
 
 						<script>
 						function myMap() {
@@ -122,6 +124,21 @@
 						}
 						</script>
 						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIcHCRGYnExfznhZsBPAb7DRmIJNNrVzs&callback=myMap"></script>
+					</section>
+					<section class="block-forms">
+						<h2>Unsubscribe from mailing list</h2>
+						<form action="https://formspree.io/jeanpaul.pitman@my.jcu.edu.au" method="post">
+							<div id="email">
+								<label for="email">Contact email address:<span class="red">*</span></label>
+								<input type="email" id="email" name="email" required aria-required="true">
+							</div>
+							<div class="button">
+								<input type="submit" class="formsbig-submit" id="register-submit" value="Unsubscribe">
+							<hr>
+							<p><small>Slammers Beach Volleyball takes your data privacy seriously, you can find our <a href="privacy.html" target="_blank">Privacy policy here.</a></small></p>
+							<hr>
+							</div>
+						</form>
 					</section>
 				</section>	
 			</main>

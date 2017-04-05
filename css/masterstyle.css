@@ -520,6 +520,16 @@ ul.breadcrumb li a:hover {
 .galleryItem p {
 	padding:.4em;
 	} 
+
+.galleryItem a {
+	text-decoration:none;
+	}
+	
+.galleryItem a:link { color: white; }
+.galleryItem a:visited { color: white; }
+.galleryItem a:focus { color: white; }
+.galleryItem a:hover { color: #FE9920; }
+.galleryItem a:active { color: white; }
 	
 .galleryItem img {
 	max-width: 100%;

@@ -50,16 +50,18 @@
 					<h6>Main Content</h6>
 					<section class="container">
 						<picture>
-							<source 
-								media="(min-width: 1200px)"
-								srcset="../images/yellownet_1200x320.jpg">
-		
 							<source
 								media="(min-width: 768px)"
-								srcset="../images/yellownet_600x160.jpg">
+								sizes="100vw"
+								srcset="../images/yellownet_600x160.jpg 600w"
+								srcset="../images/yellownet_1200x320.jpg 1200w">
+								
 							<img class="img-responsive"
-								src="../images/yellownet_340x140.jpg" 
-								alt="Man failing to block while playing Beach Volleyball">
+								src="../images/yellownet_340x140.jpg" alt="Man failing to block while playing Beach Volleyball"
+								sizes="100vw"
+								srcset="../images/yellownet_340x140.jpg 340w"
+								srcset="../images/yellownet_600x160.jpg 600w"
+								srcset="../images/yellownet_1200x320.jpg 1200w">	
 						</picture><br>
 						<small>By Flavio~ Beach Vollyball:Soft Touch [<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.4</a>], <a href="https://www.flickr.com/photos/37873897@N06/5208457834" target="_blank">via Flicker</a></small>
 					</section>
@@ -140,17 +142,29 @@
 				<h6>Advertising</h6>
 				<picture>
 					<source 
-						media="(min-width: 1900px)"
-						srcset="../images/ads_320x1200.png">
+						media="(min-width: 769px)"
+						sizes="100vw"
+						srcset="../images/ads_160x300.png 160w"
+						srcset="../images/ads_320x600.png 320w">
+					
+					<img class="img-responsive"
+						src="../images/ads_340x140.png" alt="advertising"
+						sizes="100vw"
+						srcset="../images/ads_340x140.png 340w"
+						srcset="../images/ads_680x280.png 680w">
+				</picture>
+				<picture>
 					<source 
 						media="(min-width: 769px)"
-						srcset="../images/ads_160x600.png">
-					<source 
-						media="(min-width: 500px)"
-						srcset="../images/ads_550x700.png">
+						sizes="100vw"
+						srcset="../images/ads_160x300.png 160w"
+						srcset="../images/ads_320x600.png 320w">
+					
 					<img class="img-responsive"
-						src="../images/ads_350x450.png" 
-						alt="advertising">
+						src="../images/ads_340x140.png" alt="advertising"
+						sizes="100vw"
+						srcset="../images/ads_340x140.png 340w"
+						srcset="../images/ads_680x280.png 680w">
 				</picture>
 			</article>
 			</aside>

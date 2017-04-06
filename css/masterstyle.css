@@ -220,6 +220,7 @@ header    {
   display: none;
 }
 
+/* MEDIA QUERIES*/
 @media screen and (max-width: 550px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -242,7 +243,7 @@ header    {
   }
   
 }
-
+/* MEDIA QUERIES*/
 @media (min-width: 769px) {
 	.topnav a {
 	width:80%;
@@ -285,7 +286,7 @@ header    {
   display: none;
 }
 
-
+/* MEDIA QUERIES*/
 @media (min-width: 769px) {
 	.subnav a {
 	width:80%;
@@ -364,12 +365,12 @@ ul.breadcrumb li a:hover {
 /* MEDIA QUERIES*/
 @media only screen and (max-width : 940px),
 only screen and (max-device-width : 940px){
-	.galleryItem {width: 31%;}
+	.galleryItem {width: 46%;}
 }
 
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
-	.galleryItem {width: 40%;}
+	.galleryItem {width: 33.33%;}
 }
 
 @media only screen and (max-width : 530px),
@@ -506,7 +507,7 @@ only screen and (max-device-width : 698px){
 	text-shadow: 3px 2px black;
 	overflow; hidden;
 	}
-
+/* MEDIA QUERIES*/
 @media only screen and (max-width : 530px),
 only screen and (max-device-width : 530px){
 	.container-welcome {font-size: 2em;}
